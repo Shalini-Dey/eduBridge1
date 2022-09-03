@@ -1,0 +1,243 @@
+Q1>> create a java program to print your mother and father name, age, salary, phonenumber, address 
+     like city state country.
+
+     public class Assignment1 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		String name1 = "Sabita Dey";
+		int age1 = 55;
+		String name2 = "Sunil Kumar Dey";
+		int age2 = 57;
+		double salary = 95000;
+		
+		
+		System.out.println("Mothers name is "+ name1);
+		System.out.println("Age of Mother is "+ age1);
+		System.out.println("Fathers name is "+ name2);
+		System.out.println("Age of Father is "+ age2);
+		System.out.println("The salary is "+ salary);
+		System.out.println("The contact Info is:  9535781245");
+		System.out.println("The Address is: JHARIA, DHANBAD, JHARKHAND");
+
+	}
+
+}
+
+
+Q2>> Write a java program to print the below msg in the given format
+                                              hello
+		welcome     to 
+	edubridge       online         classes
+ 
+SOLUTION:-  public class Assignment2 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+System.out.println("                    Hello             " + "\n welcome"  + 
+"     to" + "    edubridge" + " \n     online" + "      "
+		+ " classes");
+	}
+
+}
+
+
+Q3>>  What is default package in JAVA?
+SOL:  The default package is a collection of java classes whose source files do not 
+      contain and package declarations. These packages act as the default package for
+      such classes. It provides the ease of creating small applications when the 
+      development of any project or application has just begun.
+
+Q4>>  Scanner class is in which package?
+SOL:  java.util  package
+
+Q5>>  list the methods of Scanner class.?
+SOL:  nextInt()	  reads an int value from the user
+      nextFloat()	  reads a float value form the user
+      nextBoolean() reads a boolean value from the user
+      nextLine()	 reads a line of text from the user
+      next()	 reads a word from the user
+      nextByte()	 reads a byte value from the user
+      nextDouble() reads a double value from the user
+      nextShort()	reads a short value from the user
+      nextLong()	reads a long value from the user
+
+Q6>>  List the types of datatypes with size and give an example of each by doing 
+      declaring and initializating the variables.
+SOL:  byte	   1 byte	   Stores whole numbers from -128 to 127
+      short	   2 bytes	   Stores whole numbers from -32,768 to 32,767
+      int	   4 bytes	   Stores whole numbers from -2,147,483,648 to 2,147,483,647
+      long	   8 bytes	   Stores whole numbers from -9,223,372,036,854,775,808 to 9,223,372,036,854,775,807
+      float	   4 bytes	   Stores fractional numbers. Sufficient for storing 6 to 7 decimal digits
+      double   8 bytes	   Stores fractional numbers. Sufficient for storing 15 decimal digits
+      boolean  1 bit	   Stores true or false values
+      char	   2 bytes	   Stores a single character/letter or ASCII values.
+
+Q7>>  Write a program to display the names of your friends by calling the static methods
+SOL:  public class Add2StaticNo {
+	static int num1 = 90;
+	static int num2 = 400;
+	static int sum = num1 +  num2;
+	static void display()
+	{
+		System.out.println("The result is " + sum);
+	}
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		System.out.println("Enter the value od num1: " +num1);
+		System.out.println("Enter the value of num2: " +num2);
+		display();
+
+	}
+
+}
+
+
+Q8>>  Write a program to display the names of your friends by calling the static methods.
+SOL:  public class StaticFreiendName {
+	static String FName = "Jessica";
+	static void display()
+	{
+		System.out.println(" My Friends name is: " + FName);
+	}
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		display();
+
+	}
+
+}
+
+
+Q9>>  Explain the public static void main(String[] args) in detail.
+SOL:  Java main method is the entry point of any java program. Its syntax is always
+      public static void main(String[] args). You can only change the name of String 
+      array argument, for example you can change args to myStringArgs. 
+      Also String array argument can be written as String... args or String args[].
+      
+      public: This is the access modifier of the main method. It has to be public so
+              that java runtime can execute this method
+
+      static: When java runtime starts, there is no object of the class present. 
+              That’s why the main method has to be static so that JVM can load the 
+              class into memory and call the main method. If the main method won’t 
+              be static, JVM would not be able to call it because there is no object
+              of the class is present.
+    
+      void:   Java programming mandates that every method provide the return type. 
+              Java main method doesn’t return anything, that’s why it’s return type 
+              is void. This has been done to keep things simple because once the main
+              method is finished executing, java program terminates.
+
+     main:    This is the name of java main method. It’s fixed and when we start a 
+              java program, it looks for the main method.
+
+     String[]args:  ava main method accepts a single argument of type String array. 
+                    This is also called as java command line arguments
+
+Q10>>  What are the rules of naming the java file.?
+SOL:  Packages: Names should be in lowercase. ...
+      Classes: Names should be in CamelCase. ...
+      Interfaces: Names should be in CamelCase. ...
+      Methods: Names should be in mixed case. ...
+      Variables: Names should be in mixed case. ...
+      Constants: Names should be in uppercase.
+
+Q11>>  what are the rules of naming the class?
+SOL:   Class names should be nouns, in mixed cases with the first letter of each 
+       internal word capitalized. Interfaces names should also be capitalized just 
+       like class names.
+
+Q12>>  what are the rules for naming the methods?
+SOL:   Methods should be verbs in lowerCamelCase or a multi-word name that begins with 
+       a verb in lowercase; that is, with the first letter lowercase and the first 
+       letters of subsequent words in uppercase. Local variables, instance variables,
+       and class variables are also written in lowerCamelCase.
+
+Q13>>  what are the rules for naming variables in java?
+SOL:   Variable names are case-sensitive.
+       Subsequent characters may be letters, digits, dollar signs, or underscore 
+       characters.
+       If the name you choose consists of only one word, spell that word in all 
+       lowercase letters.
+
+Q14>>  which is the main entry point of java program
+SOL:   public static void main(String[] args){
+       }
+
+Q15>>  who is invoking the main method of java ?
+SOL:   Jvm starts main thread to call main method
+
+Q16>>  why main has to be static method components of java program are?
+SOL:   When java runtime starts, there is no object of the class present. 
+       That's why the main method has to be static so that JVM can load the class 
+       into memory and call the main method. If the main method won't be static, 
+       JVM would not be able to call it because there is no object of the class is present.
+
+
+Q17>>  what is jvm,jre,jdk?
+SOL:   JDK = Java Runtime Environment (JRE) + Development tools. 
+       JRE = Java Virtual Machine (JVM) + Libraries to run the application. 
+       JVM = Only Runtime environment for executing the Java byte code.
+
+Q18>>  Explain the components of compile time environments and run time environments.?
+SOL:   Runtime environment is a state of the target machine, which may include software
+       libraries, environment variables, etc., to provide services to the processes 
+       running in the system.
+
+Q19>>  what is JIT?
+SOL:   Just-in-time, or JIT, is an inventory management method in which goods are received 
+       from suppliers only as they are needed. The main objective of this method is to 
+       reduce inventory holding costs and increase inventory turnover.
+
+Q20>>  different types of memory in jvm?
+SOL:   Loading of code
+       Verification of code
+       Executing the code
+       It provides a run-time environment to the users
+
+Q21>>  In which area .class is stored?
+SOL:   All the class variable primitive or object references (which is just a pointer 
+       to location where object is stored i.e. heap) are also stored in heap. Classes 
+       loaded by ClassLoader and static variables and static object references are stored 
+       in a special location in heap which permanent generation.
+
+Q22>>  In which area object are stored?
+SOL:   All objects in Java are stored on the heap. The "variables" that hold references
+       to them can be on the stack or they can be contained in other objects (then they
+       are not really variables, but fields), which puts them on the heap also. The Class
+       objects that define Classes are also heap objects.
+
+Q23>>  Why do we call as java simple?
+SOL:   Java is very easy to learn, and its syntax is simple, clean and easy to 
+       understand. According to Sun Microsystem, Java language is a simple programming 
+       language because: Java syntax is based on C++ (so easier for programmers to learn it after C++).
+
+Q24>>  Write a program to display names of days by using commandLine arguments.?
+
+-------------------------------------------------------------------------------------------------------------------------
+
+STATIC VARIABLE:-1> class variable, it is a part of class not object
+                 3> memory is allocated  during complition time not during run time
+                 4> life span of class variable is more than that of instance variable
+                 5> static variavle memory deallocation when we close the application
+                 6> instance variable memory deallocates when object is garbage collected
+                 7> static variable is comman for all the objects
+                 8> instance variables is not common, every object has their own instance variables
+                 9> static variable retains its value throught the program..
+by providing the setter methor the properties are writable
+by proviging the getter method the properties are readable
+
+Constructor invoking: 
+
+
+
+
+
+
+
+
+
